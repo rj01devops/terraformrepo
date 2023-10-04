@@ -6,11 +6,9 @@ terraform {
     }
   }
 }
-variable "AWS_ACCESS_KEY" {}
-variable "AWS_SECRET_KEY" {}
 provider "aws" {
-access_key = var.ACCESSKEY
-secret_key = var.SECRETKEY
+access_key = "AKIAYOBXMZNGRNKU4CHA"
+secret_key = "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"
   region     = "ap-south-1"
 }
 resource "aws_instance" "webec2" {
